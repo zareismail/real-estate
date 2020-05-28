@@ -1,0 +1,38 @@
+{
+    "name": "zareismail/real-estate",
+    "description": "A Laravel Nova tool.",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "optimistdigital/nova-multiselect-field": "~1.8",
+        "armincms/many-to-many": "~0.2",
+        "rimu/formatted-number": "~0.2",
+        "genealabs/nova-map-marker-field": "~0.1",
+        "zareismail/nova-contracts": "*",
+        "zareismail/nova-location": "~0.1",
+        "zareismail/markable": "~0.1", 
+        "zareismail/meta-data": "~0.1", 
+        "zareismail/nova-wizard": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zareismail\\RealEstate\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zareismail\\RealEstate\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
